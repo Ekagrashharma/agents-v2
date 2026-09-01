@@ -1,6 +1,5 @@
 import "dotenv/config";
 import { generateText, type ModelMessage } from "ai";
-import { GoogleGenAI } from "@google/genai";
 import { google } from "@ai-sdk/google"
 import { tools } from "./tools/index.ts"
 import { executeTool } from "./executeTools.ts";
@@ -31,11 +30,12 @@ export async function runAgent(
       },
   });
 
+  
   // console.log(text , toolCalls);
 
-  toolCalls.forEach(async(tc)=>{
-    console.log( await executeTool(tc.toolName , tc.input));
-  })
+  // toolCalls.forEach(async(tc)=>{
+  //   console.log( await executeTool(tc.toolName , tc.input));
+  // })
 }
 
-runAgent("hello my name is ekagra , what is the current date and time ");
+
