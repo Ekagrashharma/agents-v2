@@ -37,7 +37,7 @@ export const buildMessages = (
 ): ModelMessage[] => {
   const systemPrompt = data.systemPrompt ?? SYSTEM_PROMPT;
   return [
-    { role: "system", content: systemPrompt },
+    // { role: "system", content: systemPrompt },
     { role: "user", content: data.prompt! },
   ];
 };
