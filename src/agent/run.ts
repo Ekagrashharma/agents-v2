@@ -11,7 +11,7 @@ import type { AgentCallbacks } from "../types.ts";
 const MODEL_NAME = "gemini-3.5-flash";
 
 Laminar.initialize({
-  projectApiKey: process.env.LMNR_PROJECT_API_KEY
+  projectApiKey:process.env.LMNR_API_KEY
 });
 
 export async function runAgent(
